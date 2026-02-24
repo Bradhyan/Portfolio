@@ -5,3 +5,33 @@ body {
   background-color: #0b1120;
   color: #e2e8f0;
 }
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeLeft {
+  animation: fadeLeft 0.9s ease-out forwards;
+}
+
+.animate-fadeRight {
+  animation: fadeRight 0.9s ease-out forwards;
+}
