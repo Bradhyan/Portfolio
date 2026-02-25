@@ -1,4 +1,10 @@
+"use client";
+import Image from "next/image";
+import useInView from "@/hooks/useInView";
+
 export default function About() {
+  const [ref, isVisible] = useInView({ threshold: 0.1 });
+
   return (
     <section className="py-24 px-6">
       <div className="max-w-4xl mx-auto">
@@ -22,5 +28,6 @@ export default function About() {
 
       </div>
     </section>
+
   );
 }
