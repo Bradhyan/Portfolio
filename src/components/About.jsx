@@ -9,21 +9,6 @@ export default function About() {
       ref={ref}
       className="relative py-28 px-6 md:px-20 overflow-hidden"
     >
-      {/* 🎬 Background Video */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="opacity-40 blur-sm"
-        >
-          <source src="/movies/Aurora.mp4" type="video/mp4" />
-        </video>
-      </div>
-
-      {/* 🌑 Overlay para contraste */}
-      <div className="absolute inset-0 z-10 bg-[#050b18]/80"></div>
 
       {/* 🧠 Contenido */}
       <div className="relative z-20 max-w-4xl mx-auto text-center">

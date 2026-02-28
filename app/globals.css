@@ -63,3 +63,37 @@ body {
 .animate-sidebar {
   animation: sidebarIntro 0.8s ease-out 0.6s forwards;
 }
+@layer utilities {
+  .animate-photo {
+    animation: photoIn 1.2s ease-out forwards;
+    animation-delay: 0.2s;
+  }
+}
+
+@keyframes photoIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px); /* Empieza 50px a la derecha */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);    /* Llega a su posición original */
+  }
+}
+@layer utilities {
+  .animate-photoIn {
+    /* Agregamos forwards para que al terminar la animación se quede visible */
+    animation: slideInLeft 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); /* Viene desde la derecha */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

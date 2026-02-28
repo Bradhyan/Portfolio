@@ -9,35 +9,17 @@ import {
 
 export default function Introduction() {
   return (
-    <section className="relative min-h-[95vh] md:min-h-[85vh] flex flex-col justify-center px-6 md:px-24 pt-28 md:pt-0 overflow-hidden">
-
-
-      {/* 🎬 Background Video */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover"
-        >
-          <source src="/movies/Aurora.mp4" type="video/mp4" />
-        </video>
-      </div>
-
-
-      {/* 🌑 Overlay oscuro para contraste */}
-      <div className="absolute inset-0 z-10 bg-[#050b18]/75"></div>
+    <section className="relative min-h-[95vh] md:min-h-[85vh] flex flex-col justify-center px-6 md:px-24 pt-28 md:pt-18 overflow-hidden">
 
 
       {/* 🧠 Contenido */}
-      <div className="relative z-20 w-full max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-12 md:pl-16 text-center md:text-left">
+     <div className="relative z-20 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 px-4">
         {/* Texto */}
         <div className="space-y-8 max-w-xl md:ml-8 animate-text">
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight text-white">
             Software{" "}
             <span className="bg-gradient-to-r from-blue-300 via-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Engineer
+              Developer 
             </span>
           </h1>
 
@@ -68,23 +50,25 @@ export default function Introduction() {
         </div>
 
 
-        {/* Foto flotante */}
-      
-        <div className="flex justify-center md:justify-end mt-12 md:mt-0">
-          <div className="relative">
-            {/* Glow */}
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-green-500/20 blur-3xl rounded-full"></div>
+ {/* Foto flotante */}
+<div className="flex justify-center md:justify-end mt-12 md:mt-0 animate-photoIn"> 
+  <div className="relative">
+    {/* Glow */}
+    <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-green-500/20 blur-3xl rounded-full"></div>
 
-            <Image
-              src="/images/profile-tech.png"
-              alt="Brad Software Engineer"
-              width={340}
-              height={340}
-              className="relative rounded-full border border-slate-700 shadow-2xl object-cover"
-            />
-          </div>
-        </div>
+    <Image
+      src="/images/profile-tech.png"
+      alt="Brad Software Engineer"
+      width={340}
+      height={340}
+      priority
+      className="relative rounded-full border border-slate-700 shadow-2xl object-cover transition-transform duration-500 hover:scale-105"
+    />
+  </div>
+</div>
+
       </div>
+
 
       {/* 🌐 Social Sidebar */}
       {/* 🌐 Social Sidebar Minimal */}
@@ -111,7 +95,7 @@ export default function Introduction() {
         </a>
       </div>
       {/* Fade inferior hacia About */}
-<div className="absolute bottom-0 left-0 w-full h-52 bg-gradient-to-b from-transparent to-[#050b18] z-20 pointer-events-none"></div>
+
     </section>
   );
 }
