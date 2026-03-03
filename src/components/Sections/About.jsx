@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section
       ref={ref}
-      className="relative py-28 px-6 md:px-20 overflow-hidden"
+      className="relative min-h-[85vh] md:min-h-[55vh] py-15 px-6 md:px-20 overflow-hidden"
     >
 
       {/* 🧠 Contenido */}

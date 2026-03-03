@@ -9,7 +9,7 @@ import {
 
 export default function Introduction() {
   return (
-    <section className="relative min-h-[95vh] md:min-h-[85vh] flex flex-col justify-center px-6 md:px-24 pt-28 md:pt-18 overflow-hidden">
+    <section className="relative min-h-[95vh] md:min-h-[85vh]  py-15 flex flex-col justify-center px-6 md:px-24 pt-28 md:pt-18 overflow-hidden">
 
 
       {/* 🧠 Contenido */}

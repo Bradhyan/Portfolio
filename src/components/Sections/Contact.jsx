@@ -2,11 +2,11 @@ import { Mail, Github, Linkedin, Send } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-32 px-6 bg-transparent">
+    <section id="contact" className="py-15 px-6 bg-transparent">
       <div className="max-w-4xl mx-auto">
         
         {/* Contenedor tipo Glassmorphism para el contacto */}
-        <div className="relative group bg-white/5 backdrop-blur-xl border border-white/10 p-12 md:p-20 rounded-[40px] text-center overflow-hidden transition-all duration-500 hover:border-blue-500/30">
+        <div className="relative group bg-white/5 backdrop-blur-md border border-white/10 p-10 md:p-10 rounded-[40px] text-center overflow-hidden transition-all duration-500 hover:border-blue-500/30">
           
           {/* Resplandor de fondo interno */}
           <div className="absolute -top-24 -left-24 w-48 h-48 bg-blue-500/10 blur-[100px] rounded-full"></div>
@@ -50,10 +50,7 @@ export default function Contact() {
 
         </div>
 
-        {/* Footer minimalista */}
-        <footer className="mt-20 text-center text-slate-500 text-sm tracking-widest uppercase">
-          © 2026 Bradhyan Giraldo — Built with Passion 
-        </footer>
+        
       </div>
     </section>
   );

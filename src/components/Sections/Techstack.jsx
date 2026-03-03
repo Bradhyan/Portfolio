@@ -10,7 +10,7 @@ export default function TechStack() {
   ];
 
   return (
-    <section id="tech" className="py-32 px-6 bg-transparent">
+    <section id="tech" className="py-15 px-6 bg-transparent">
       <div className="max-w-6xl mx-auto">
         
         <div className="flex flex-col items-center mb-20">

@@ -1,14 +1,15 @@
 // app/page.tsx
-import Navbar from "@/components/nbar";
-import Introduction from "@/components/Introduction";
-import About from "@/components/About";
-import Projects from "@/components/Projects";
-import TechStack from "@/components/Techstack";
-import Contact from "@/components/Contact";
+import Navbar from "@/components/layout/Navbar";
+import Introduction from "@/components/Sections/Introduction";
+import About from "@/components/Sections/About";
+import Projects from "@/components/Sections/Projects";
+import TechStack from "@/components/Sections/Techstack";
+import Contact from "@/components/Sections/Contact";
 
 export default function Home() {
   return (
     <div className="relative min-h-screen w-full bg-[#050b18]">
+
       
       {/* 🎬 VIDEO DE FONDO GLOBAL */}
       <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
@@ -26,6 +27,8 @@ export default function Home() {
       {/* 🧭 NAVBAR (Encima de todo) */}
       <Navbar /> 
 
+ 
+
       {/* 🧩 CONTENEDOR DE SECCIONES */}
       <div className="relative z-10 w-full">
         
@@ -35,26 +38,27 @@ export default function Home() {
         </section>
 
         {/* SECCIÓN 2: About */}
-        <section className="relative backdrop-blur-none bg-black/60 transition-all duration-700">
+        <section className="relative backdrop-blur-none bg-black/80 transition-all duration-700">
           <About />
         </section>
 
         {/* SECCIÓN 3: Projects */}
-        <section className="relative backdrop-blur-md bg-black/85 transition-all duration-700">
+        <section className="relative backdrop-blur-md bg-black/60 transition-all duration-700">
           <Projects />
         </section>
 
         {/* SECCIÓN 4: TechStack */}
-        <section className="relative backdrop-blur-md bg-black/60 transition-all duration-700">
+        <section className="relative backdrop-blur-md bg-black/80 transition-all duration-700">
           <TechStack />
         </section>
 
         {/* SECCIÓN 5: Contact */}
-        <section className="relative backdrop-blur-xl bg-black/85 transition-all duration-700">
+        <section className="relative backdrop-blur-md bg-black/60 transition-all duration-700">
           <Contact />
         </section>
 
       </div>
-    </div>
+      </div>
+    
   );
 }
