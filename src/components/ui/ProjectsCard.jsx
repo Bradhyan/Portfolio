@@ -1,38 +1,40 @@
-// En src/components/ui/ProjectCard.jsx
-export default function ProjectCard({ title, description, link, githubUrl }) {
+// src/components/ui/ProjectsCard.jsx
+import Image from 'next/image';
+
+export default function ProjectsCard({ title, description, link, githubUrl, image }) {
   return (
-  <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/50 hover:shadow-[5px_5px_15px_rgba(37,99,235,0.3)]">
-      {/* 🖼️ Reducimos la altura de la imagen para que la card no sea tan larga */}
-      <div className="h-60 bg-slate-800 w-full flex items-center justify-center">
-        <span className="text-slate-500 text-xs">Preview</span>
+    <div className="bg-[#0a0f1a] border border-white/10 rounded-2xl overflow-hidden transition-all duration-300 flex flex-col h-full hover:border-blue-500/50 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)]">
+      
+      {/* 🖼️ Contenedor de Imagen con el "Molde" Correcto */}
+      {/* Definimos el alto del contenedor (ej: h-48) y usamos 'relative' para el fill */}
+      <div className="relative w-full h-68 shrink-0 overflow-hidden bg-slate-800">
+        <Image 
+          src={image} // Tu ruta de imagen, ej: "/images/work.png"
+          alt={title}
+          fill // Ocupa el 100% de este contenedor
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Optimización Next.js
+          className="object-cover object-center transition-transform duration-500 hover:scale-110" 
+        />
+        {/* Un degradado sutil opcional para suavizar la transición inferior */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f1a] to-transparent opacity-60"></div>
       </div>
       
-      <div className="p-4">
-        <h3 className="text-lg font-bold text-white truncate">{title}</h3>
-        <p className="text-slate-400 text-xs my-2 line-clamp-2">
+      {/* 📝 Contenedor de Texto y Botones (Separado de la imagen) */}
+      <div className="p-5 flex flex-col flex-grow">
+        <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
+        <p className="text-slate-400 text-sm line-clamp-3 mb-6 flex-grow">
           {description}
         </p>
-        <div className="p-4">
-    
-      
-      {/* 🎯 Contenedor de Botones con Flexbox (gap-3 los separa) */}
-      <div className="flex gap-3 mt-4">
-        <a 
-          href={link} 
-          target="_blank" 
-          className="text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 px-4 py-1.5 rounded-lg transition-colors flex-1 text-center"
-        >
-          Ver Proyecto
-        </a>
-        <a 
-          href={githubUrl} 
-          target="_blank" 
-          className="text-xs font-semibold text-slate-300 bg-slate-700 hover:bg-slate-600 px-4 py-1.5 rounded-lg transition-colors flex-1 text-center"
-        >
-          Código Git
-        </a>
-      </div>
-    </div>
+        
+        {/* Contenedor de Botones alineados al fondo */}
+        <div className="flex gap-3 mt-auto">
+          <a href={link} target="_blank" className="flex-1 text-center py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold rounded-lg transition-colors">
+            Ver Proyecto
+          </a>
+          <a href={githubUrl} target="_blank" className="flex-1 text-center py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold rounded-lg transition-colors border border-white/5">
+            Código Git
+          </a>
+        </div>
       </div>
     </div>
   );
