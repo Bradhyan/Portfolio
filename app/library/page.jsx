@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { snippets } from "@/data/library/snippets";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function LibraryPage() {
   const [selected, setSelected] = useState(snippets[0]);
@@ -45,7 +45,7 @@ export default function LibraryPage() {
               {/* Cambiamos text-[10px] por text-xs o text-sm 
       Aumentamos tracking a widerrrr o [0.5em] para un look más moderno
     */}
-              <h3 className="text-xs font-black text-blue-400 uppercase tracking-[0.5em]">
+              <h3 className="text-[13px] font-bold text-blue-400 uppercase tracking-[0.4em] opacity-90">
                 Componentes
               </h3>
             </div>
