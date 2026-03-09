@@ -35,7 +35,7 @@ export default function MiniProjects() {
       </div>
 
       {/* 🌌 CONTENIDO  */}
-      <section className="relative z-10 py-20 px-6 backdrop-blur-md bg-black/40 border">
+      <section className="relative z-10 py-20 px-6 backdrop-blur-lg bg-black/40 border">
         <div className="max-w-6xl mx-auto  bg-transparent  rounded-3xl p-12">
           <h2 className="text-4xl font-bold text-white mb-12 text-center">
             Small <span className="text-blue-400">Tool</span> Projects

@@ -49,13 +49,13 @@ export default function Navbar() {
                 Small Tools
               </Link>
               <Link
-                href="/#projects"
+                href="/library"
                 className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium"
               >
                 Library Components
               </Link>
               <Link
-                href="/library"
+                href="/#contact"
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-500 transition-all"
               >
                 Contact
@@ -87,7 +87,7 @@ export default function Navbar() {
               Small Tools
             </Link>
             <Link
-              href="/#projects"
+              href="/library"
               onClick={() => setIsOpen(false)}
               className="text-gray-300 hover:text-white block px-3 py-4 text-base font-medium w-full text-center"
             >

@@ -33,27 +33,27 @@ export default function Home() {
       <div className="relative z-10 w-full">
         
         {/* SECCIÓN 1: Introduction */}
-        <section className="relative backdrop-blur-none bg-black/60 transition-all duration-700">
+        <section className="relative backdrop-blur-lg bg-black/40  transition-all duration-700">
           <Introduction />
         </section>
 
         {/* SECCIÓN 2: About */}
-        <section className="relative backdrop-blur-none bg-black/80 transition-all duration-700">
+        <section className="relative backdrop-blur-lg bg-black/85 transition-all duration-700">
           <About />
         </section>
 
         {/* SECCIÓN 3: Projects */}
-        <section className="relative backdrop-blur-md bg-black/60 transition-all duration-700">
+        <section className="relative backdrop-blur-lg bg-black/40 transition-all duration-700">
           <Projects />
         </section>
 
         {/* SECCIÓN 4: TechStack */}
-        <section className="relative backdrop-blur-md bg-black/80 transition-all duration-700">
+        <section className="relative backdrop-blur-lg bg-black/85 transition-all duration-700">
           <TechStack />
         </section>
 
         {/* SECCIÓN 5: Contact */}
-        <section className="relative backdrop-blur-md bg-black/60 transition-all duration-700">
+        <section className="relative backdrop-blur-lg bg-black/40 transition-all duration-700">
           <Contact />
         </section>
 
