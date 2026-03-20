@@ -1,13 +1,4 @@
-"use client";
-import Image from "next/image";
-import {
-  FaLinkedinIn,
-  FaGithub,
-  FaInstagram,
-  FaEnvelope,
-} from "react-icons/fa";
-
-export default function Introduction() {
+export const HeroCode = `export default function Introduction() {
   return (
     <section className="relative min-h-[95vh] md:min-h-[85vh]  py-15 flex flex-col justify-center px-6 md:px-24 pt-28 md:pt-18 overflow-hidden">
 
@@ -74,28 +65,29 @@ export default function Introduction() {
       {/* 🌐 Social Sidebar Minimal */}
       <div className="hidden md:flex fixed left-8 top-1/2 -translate-y-1/2 z-30 flex-col items-center gap-6 opacity-0 -translate-x-4 animate-sidebar">
         <a
-          href="mailto:giraldo_arenas@outlook.com"
+          href="#"
           className="text-slate-400 hover:text-white hover:scale-110 transition duration-300 text-xl"
         >
           <FaEnvelope />
         </a>
+
         <a
-          href="https://www.linkedin.com/in/bradhyan-giraldo-arenas-a437772b2" target="_blank"
-          className="text-slate-400 hover:text-white hover:scale-110 transition duration-300 text-xl"
-        >
-          <FaLinkedinIn />
-        </a>
-        <a
-          href="https://github.com/Bradhyan" target="_blank"
+          href="#"
           className="text-slate-400 hover:text-white hover:scale-110 transition duration-300 text-xl"
         >
           <FaGithub />
         </a>
 
-        
+        <a
+          href="#"
+          className="text-slate-400 hover:text-white hover:scale-110 transition duration-300 text-xl"
+        >
+          <FaLinkedinIn />
+        </a>
       </div>
       {/* Fade inferior hacia About */}
 
     </section>
   );
 }
+`;

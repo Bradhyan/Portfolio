@@ -25,7 +25,7 @@ export default function Contact() {
             {[
               { icon: <Mail size={24} />, href: "mailto:giraldo_arenas@outlook.com", color: "hover:text-blue-400" },
               { icon: <Github size={24} />, href: "https://github.com/Bradhyan", color: "hover:text-white" },
-              { icon: <Linkedin size={24} />, href: "#", color: "hover:text-blue-600" }
+              { icon: <Linkedin size={24} />, href: "https://www.linkedin.com/in/bradhyan-giraldo-arenas-a437772b2", color: "hover:text-blue-600" }
             ].map((social, i) => (
               <a
                 key={i}
