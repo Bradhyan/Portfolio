@@ -9,24 +9,24 @@ export default function About() {
       ref={ref}
       className="relative min-h-[85vh] md:min-h-[55vh] py-15 px-6 md:px-20 overflow-hidden"
     >
-
       {/* 🧠 Contenido */}
       <div className="relative z-20 max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-10 text-white">
-          Sobre mí
+          Who I Am
         </h2>
 
         <p className="text-slate-300 leading-relaxed text-lg md:text-xl">
-          Soy desarrollador fullstack con experiencia en backend robusto y
-          arquitecturas escalables. Mi enfoque combina desarrollo de software
-          con fundamentos sólidos en infraestructura y networking, lo que me
-          permite construir sistemas eficientes desde la aplicación hasta la red.
+          I am a Fullstack Developer with a focus on building robust backend
+          systems and scalable architectures. My approach integrates software
+          development with solid foundations in infrastructure and Level 1
+          Networking, allowing me to design efficient systems from the
+          application layer down to the physical network
         </p>
 
         <p className="text-slate-400 leading-relaxed text-lg md:text-xl mt-8">
-          Trabajo con tecnologías modernas como Java, React y Python,
-          aplicando buenas prácticas, control de versiones y despliegue en la nube.
-          Me interesa especialmente el diseño de sistemas y la optimización de rendimiento.
+          I leverage modern technologies like Java, React, and Python, following
+          industry best practices, version control, and cloud deployment to
+          ensure high-performance and optimized system design
         </p>
       </div>
     </section>

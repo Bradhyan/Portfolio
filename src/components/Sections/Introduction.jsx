@@ -10,65 +10,59 @@ import {
 export default function Introduction() {
   return (
     <section className="relative min-h-[95vh] md:min-h-[85vh]  py-15 flex flex-col justify-center px-6 md:px-24 pt-28 md:pt-18 overflow-hidden">
-
-
       {/* 🧠 Contenido */}
-     <div className="relative z-20 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 px-4">
+      <div className="relative z-20 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 px-4">
         {/* Texto */}
         <div className="space-y-8 max-w-xl md:ml-8 animate-text">
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight text-white">
             Software{" "}
             <span className="bg-gradient-to-r from-blue-300 via-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Developer 
+              Developer
             </span>
           </h1>
 
           <p className="text-slate-300 text-xl md:text-2xl leading-relaxed">
-            Fullstack developer con mentalidad de arquitectura y experiencia en
-            networking. Diseño y construyo sistemas escalables desde la
-            aplicación hasta la infraestructura.
+            Fullstack developer with an architectural mindset and networking
+            experience. I design and build scalable systems from application to
+            infrastructure.
           </p>
 
-
           {/* BOTONES */}
-      
+
           <div className="flex flex-col sm:flex-row gap-4 pt-4 opacity-0 translate-y-4 animate-buttons">
             <a
               href="#projects"
               className="px-8 py-3 bg-blue-600 hover:bg-blue-500 transition rounded-lg shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 text-center"
             >
-              Ver Proyectos
+              See projects
             </a>
 
             <a
               href="#contact"
               className="px-8 py-3 border border-slate-600 rounded-lg hover:border-green-400 transition text-center"
             >
-              Contacto
+              Contact
             </a>
           </div>
         </div>
 
+        {/* Foto flotante */}
+        <div className="flex justify-center md:justify-end mt-12 md:mt-0 animate-photoIn">
+          <div className="relative">
+            {/* Glow */}
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-green-500/20 blur-3xl rounded-full"></div>
 
- {/* Foto flotante */}
-<div className="flex justify-center md:justify-end mt-12 md:mt-0 animate-photoIn"> 
-  <div className="relative">
-    {/* Glow */}
-    <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-green-500/20 blur-3xl rounded-full"></div>
-
-    <Image
-      src="/images/profile-tech.png"
-      alt="Brad Software Engineer"
-      width={340}
-      height={340}
-      priority
-      className="relative rounded-full border border-slate-700 shadow-2xl object-cover transition-transform duration-500 hover:scale-105"
-    />
-  </div>
-</div>
-
+            <Image
+              src="/images/profile-tech.png"
+              alt="Brad Software Engineer"
+              width={340}
+              height={340}
+              priority
+              className="relative rounded-full border border-slate-700 shadow-2xl object-cover transition-transform duration-500 hover:scale-105"
+            />
+          </div>
+        </div>
       </div>
-
 
       {/* 🌐 Social Sidebar */}
       {/* 🌐 Social Sidebar Minimal */}
@@ -80,22 +74,21 @@ export default function Introduction() {
           <FaEnvelope />
         </a>
         <a
-          href="https://www.linkedin.com/in/bradhyan-giraldo-arenas-a437772b2" target="_blank"
+          href="https://www.linkedin.com/in/bradhyan-giraldo-arenas-a437772b2"
+          target="_blank"
           className="text-slate-400 hover:text-white hover:scale-110 transition duration-300 text-xl"
         >
           <FaLinkedinIn />
         </a>
         <a
-          href="https://github.com/Bradhyan" target="_blank"
+          href="https://github.com/Bradhyan"
+          target="_blank"
           className="text-slate-400 hover:text-white hover:scale-110 transition duration-300 text-xl"
         >
           <FaGithub />
         </a>
-
-        
       </div>
       {/* Fade inferior hacia About */}
-
     </section>
   );
 }

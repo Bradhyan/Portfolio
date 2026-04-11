@@ -28,7 +28,7 @@ export default function LibraryPage() {
             Code Library
           </h1>
           <p className="text-gray-300 text-base md:text-lg mt-2">
-            Mi colección personal de componentes UI reutilizables.
+            My personal collection of reusable UI components.
           </p>
         </header>
 
@@ -51,7 +51,7 @@ export default function LibraryPage() {
 
             <div className="h-16 flex items-center px-6 border-b border-white/10 bg-white/5">
               <h3 className="text-xs font-black text-blue-400 uppercase tracking-[0.35em]">
-                Componentes
+                Components
               </h3>
             </div>
 
@@ -99,7 +99,7 @@ export default function LibraryPage() {
                 onClick={() => navigator.clipboard.writeText(selected.code)}
                 className="px-5 py-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-lg transition-all"
               >
-                Copiar Código
+                Copy Code
               </button>
 
             </div>

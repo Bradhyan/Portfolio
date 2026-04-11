@@ -29,10 +29,10 @@ export default function ProjectsCard({ title, description, link, githubUrl, imag
         {/* Contenedor de Botones alineados al fondo */}
         <div className="flex gap-3 mt-auto">
           <a href={link} target="_blank" className="flex-1 text-center py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold rounded-lg transition-colors">
-            Ver Proyecto
+            see project
           </a>
           <a href={githubUrl} target="_blank" className="flex-1 text-center py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold rounded-lg transition-colors border border-white/5">
-            Código Git
+            Git code
           </a>
         </div>
       </div>

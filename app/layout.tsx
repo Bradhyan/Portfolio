@@ -3,13 +3,19 @@ import Navbar from "@/components/layout/Navbar"; // Verifica que la ruta sea cor
 import Footer from "@/components/layout/Footer"; 
 import "./globals.css";
 
+export const metadata = {
+  title: 'Bradhyan Giraldo | Fullstack Developer',
+  description: 'Fullstack developer with an architectural mindset and networking experience.',
+  
+}
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
+    <html lang="en" suppressHydrationWarning>
       <body className="bg-[#050b18]">
         {/* 1. El Navbar se queda fijo arriba */}
         <Navbar />

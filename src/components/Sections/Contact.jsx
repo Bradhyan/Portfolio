@@ -13,11 +13,11 @@ export default function Contact() {
           <div className="absolute -bottom-24 -right-24 w-48 h-48 bg-green-500/10 blur-[100px] rounded-full"></div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white tracking-tight">
-            ¿Listo para el siguiente <span className="text-blue-400">nivel?</span>
+            Ready for the next  <span className="text-blue-400">level?</span>
           </h2>
 
           <p className="text-slate-300 text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
-            Estoy abierto a oportunidades remotas, proyectos freelance y colaboraciones técnicas de alto impacto.
+            I'm open to remote opportunities, freelance projects, and technical collaborations with high impact.
           </p>
 
           {/* Redes Sociales con estilo de botones de cristal */}
@@ -44,7 +44,7 @@ export default function Contact() {
             href="mailto:giraldo_arenas@outlook.com"
             className="inline-flex items-center gap-3 px-10 py-4 bg-blue-600 text-white font-bold rounded-2xl hover:bg-blue-500 hover:shadow-[0_0_30px_rgba(37,99,235,0.4)] transition-all duration-300 transform hover:-translate-y-1"
           >
-            Enviar Email
+            Send Email
             <Send size={20} />
           </a>
 
