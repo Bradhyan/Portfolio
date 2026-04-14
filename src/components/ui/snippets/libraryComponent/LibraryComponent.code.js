@@ -42,7 +42,7 @@ Componentes
 
 <nav className="p-4 space-y-2 max-h-[300px] lg:max-h-none overflow-auto">
 
-{snippets.map((item)=>(
+{[...snippets].sort((a,b)=>a.title.localeCompare(b.title)).map((item)=>(
 <button
 key={item.id}
 onClick={()=>setSelected(item)}
@@ -91,9 +91,14 @@ Copiar Código
 <div className="flex-1 flex flex-col bg-black/10">
 
 <div className="p-6 md:p-10 border-b border-white/10">
-<div className="border border-white/10 rounded-xl bg-black p-4">
-<div className="w-full">
+<div 
+  className="border border-white/10 rounded-xl bg-black p-4 relative overflow-hidden" 
+  style={{ minHeight: '400px', transform: 'translateZ(0)' }}
+>
+<div className="w-full h-full absolute inset-0 bg-transparent flex justify-center p-4 overflow-y-auto">
+<div className="w-full pb-20">
 {Component&&<Component preview/>}
+</div>
 </div>
 </div>
 </div>
